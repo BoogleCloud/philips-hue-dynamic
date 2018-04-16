@@ -5,5 +5,14 @@ The first argument is the scene to set. If this is a number we assume it is a co
 
 The second argument is the number of minutes to transition up to 60.
 
+## Setup
+apt install python3-setuptools python3-dev build-essential
+cd phue-master
+python3 setup.py install
+
+Set the IP address (or resolvable hostname) of your hue bridge in 'bridgeip.txt'
+
+Now you can run the various python scripts.
+
 ## Future work
 Expand to allow targeting of different zones and/or read the state of switches to determine if there is a manual override.
